@@ -1,0 +1,29 @@
+{
+  "name": "ngx-bubble",
+  "version": "0.0.1",
+  "author": {"name": "itisnajim", "email": "itisnajim@gmail.com", "url": "https://itisnajim.com"},
+  "description": "An angular bubble component inspired from facebook chat heads, with the help of interactjs.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itisnajim/ngx-bubble.git"
+  },
+  "homepage": "https://github.com/itisnajim/ngx-bubble",
+  "keywords": [
+    "angular",
+    "bubble",
+    "chat head",
+    "component",
+    "pwa",
+    "ionic",
+    "mobile",
+    "web"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^10.0.14",
+    "@angular/core": "^10.0.14"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
