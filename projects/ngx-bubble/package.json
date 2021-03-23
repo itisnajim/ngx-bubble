@@ -24,6 +24,7 @@
     "@angular/core": "^10.0.14"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "interact.js": "1.2.8"
   }
 }
