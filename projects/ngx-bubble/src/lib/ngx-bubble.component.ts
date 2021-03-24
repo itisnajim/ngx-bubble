@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Input, EventEmitter, OnInit, Output, Renderer2, AfterViewInit } from '@angular/core';
 import interact from 'interactjs';
 @Component({
   selector: 'ngx-bubble',
@@ -39,8 +39,6 @@ export class NgxBubbleComponent implements OnInit {
     };
     this.dragOptions = this.dragOptions || {};
     const opts = {...defaultDragOptions, ...this.dragOptions};
-    // Prevent page scroll on drag in IOS and Android
-    document.addEventListener('touchmove', (e) => e.preventDefault() , {passive: false});
     interact(this.elRef.nativeElement)
     .draggable(opts)
     .on('dragstart', (evt) => {
