@@ -4,7 +4,7 @@ An angular bubble component inspired from facebook chat heads, with the help of 
 
 ## Preview
 
-![preview](https://github.com/itisnajim/ngx-bubble/blob/master/preview.gif)  
+![preview](https://github.com/itisnajim/ngx-bubble/blob/main/preview.gif)  
 
 ## Installation
 ```
@@ -86,6 +86,24 @@ bubbleMoving(position: {x: number, y: number}): void{
 
 bubbleMoveEnd(position: {x: number, y: number}): void{
     console.log('the bubble moved to (' + String(position.x) + ',' + String(position.y) + ')');
+}
+```
+
+#### Prevent Window from scrolling/moving/reloading while dragging ngx-bubble on mobile devices.
+```typescript
+this.isBubbleDragging = false;
+window.addEventListener('touchmove', (e) => this.touchBehavior(e), {passive: false});
+
+bubbleMoveStart(_: {x: number, y: number}): void{
+    this.isBubbleDragging = true;
+}
+
+bubbleMoveEnd(_: {x: number, y: number}): void{
+    this.isBubbleDragging = false;
+}
+
+touchBehavior(e: Event){
+    if (this.isBubbleDragging) { e.preventDefault(); }
 }
 ```
 

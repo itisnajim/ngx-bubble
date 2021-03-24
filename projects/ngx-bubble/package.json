@@ -1,6 +1,6 @@
 {
   "name": "ngx-bubble",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {"name": "itisnajim", "email": "itisnajim@gmail.com", "url": "https://itisnajim.com"},
   "description": "An angular bubble component inspired from facebook chat heads, with the help of interactjs.",
   "repository": {
@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "interact.js": "1.2.8"
+    "interactjs": "1.2.8"
   }
 }

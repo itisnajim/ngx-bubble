@@ -6,6 +6,6 @@
   },
   "whitelistedNonPeerDependencies": [
     "tslib",
-    "interact.js"
+    "interactjs"
   ]
 }
