@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/ngx-bubble.svg)](https://www.npmjs.com/package/ngx-bubble) [![downloads](https://img.shields.io/npm/dm/ngx-bubble.svg)](https://www.npmjs.com/package/ngx-bubble)
+
 # ngx-bubble
 
 An angular bubble component inspired from facebook chat heads, with the help of [interactjs](https://www.npmjs.com/package/interactjs).
